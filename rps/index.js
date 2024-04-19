@@ -1,4 +1,3 @@
-import img1 = "./${playerMove}-emoji.png"
 let score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
   losses: 0,
@@ -79,7 +78,7 @@ function playGame(playerMove) {
   updateScoreElement();
   document.querySelector('.js-result').innerHTML = result;
   document.querySelector('.js-moves').innerHTML = `You
-<img src={img1} class="move-icon">
+<img src="./${playerMove}-emoji.png" class="move-icon">
 <img src="./${computerMove}-emoji.png" class="move-icon">
 Computer`;
 }
